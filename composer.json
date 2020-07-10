@@ -1,0 +1,13 @@
+{
+    "name": "_/my-framework",
+    "description": "my framework",
+    "type": "project",
+    "require": {
+        "squizlabs/php_codesniffer": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+}
