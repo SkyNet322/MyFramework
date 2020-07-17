@@ -3,7 +3,10 @@
     "description": "my framework",
     "type": "project",
     "require": {
-        "squizlabs/php_codesniffer": "*"
+        "squizlabs/php_codesniffer": "*",
+        "php-di/php-di": "^6.2",
+      "ext-pdo": "*",
+        "symfony/http-foundation": "^5.1"
     },
     "autoload": {
         "psr-4": {

@@ -4,12 +4,16 @@ declare(strict_types=1);
 
 namespace app;
 
+use Symfony\Component\HttpFoundation\Request;
+
 class HelloWorld
 {
 
     public function hello()
     {
-        echo "Heeeeeeeeeey, io";
+        $request = Request::createFromGlobals();
+
+        echo $request->query->get('name');
     }
 
 }
